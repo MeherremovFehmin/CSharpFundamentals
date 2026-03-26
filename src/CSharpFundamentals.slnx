@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="CSharpFundamentals.Tests/CSharpFundamentals.Tests.csproj" Id="d5ebab4e-7cc1-476a-a4de-807ab3404907" />
   <Project Path="CSharpFundamentals/CSharpFundamentals.csproj" />
 </Solution>
