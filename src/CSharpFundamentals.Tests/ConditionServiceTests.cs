@@ -25,15 +25,15 @@ namespace CSharpFundamentals.Tests
         }
 
         [Theory]
-        [InlineData(10, true)]    
-        [InlineData(-5, false)]   
-        [InlineData(0, false)]    
-        [InlineData(0.1, true)]   
+        [InlineData(10, true)]
+        [InlineData(-5, false)]
+        [InlineData(0, false)]
+        [InlineData(0.1, true)]
         public void IsNumberPositive_ShouldValidateCorrectly(double number, bool expected)
         {
             var result = _service.IsNumberPositive(number);
             Assert.Equal(expected, result);
-        }
+        } 
 
     }
 }
