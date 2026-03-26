@@ -21,9 +21,12 @@ jobs:
 
     - name: Kitabxanaları bərpa et (Restore)
       run: dotnet restore
+      working-directory: ./src
 
     - name: Layihəni Build et
       run: dotnet build --no-restore --configuration Release
+      working-directory: ./src
 
     - name: Bütün Testləri işə sal (Test)
       run: dotnet test --no-build --verbosity normal --configuration Release
+      working-directory: ./src
