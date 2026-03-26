@@ -35,7 +35,7 @@ namespace CSharpFundamentals.Lesson1
 
         // boolean
         bool isStudent = true;
-        bool isExpensive = false
+        bool isExpensive = false;
 
         public void PrintNumberDataTypes()
         {
