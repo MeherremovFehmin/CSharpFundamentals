@@ -6,6 +6,7 @@ namespace CSharpFundamentals.Conditions
 {
     public interface IConditionService
     {
+        string GetMonthName(int monthNumber);
         bool IsNumberPositive(double number);
     }
 }

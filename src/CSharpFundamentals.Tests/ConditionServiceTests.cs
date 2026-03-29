@@ -15,6 +15,23 @@ namespace CSharpFundamentals.Tests
         }
 
         [Fact]
+        public void GetMonthName_WhenExceptionThrew()
+        {
+            int monthNumber = 13;
+            Assert.Throws<ArgumentException>(() => _service.GetMonthName(monthNumber));
+        }
+
+        [Theory]
+        [InlineData(1, "January")]
+        [InlineData(2, "February")]
+        [InlineData(12, "December")]
+        public void GetMonthName_ShouldValidateCorrectly(int monthNumber, string expectedMonthName)
+        {
+           string actualMonthName = _service.GetMonthName(monthNumber);
+            Assert.Equal(expectedMonthName, actualMonthName);
+        }
+
+        [Fact]
         public void IsNumberPositive_WhenNumberIsFive_ReturnsTrue()
         {
             double number = 5;
